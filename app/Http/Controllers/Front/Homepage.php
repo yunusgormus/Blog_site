@@ -80,7 +80,7 @@ public function contactPost(Request $request){
 
     // Sana gelen mail
     Mail::send('mails.contact', ['data' => $data], function($mail) use ($request) {
-    $mail->to('yunusfuat67@gmail.com')
+    $mail->to('yunus@gmail.com')
          ->subject('Yeni İletişim Mesajı: ' . $request->topic);
 });
 
